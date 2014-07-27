@@ -44,4 +44,3 @@ data_Mean<-aggregate(.~Activity+Subject_ID,data.combined,FUN=mean)
 data_Mean<-data_Mean[c(2,1,3:ncol(data_Mean))]
 
 write.table(data_Mean, "data_Mean.txt")
-
